@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thoriq Fahriza — Portofolio</title>
+<meta name="description" content="Portofolio Thoriq Fahriza Zulham Noor, mahasiswa AMIKOM bidang Data Science & Machine Learning.">
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#ffffff; --text:#1c2230; --muted:#5b6475;
+    --accent:#2f6fed; --border:#e3e6ec; --chip:#eaf0ff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0f131b; --card:#171c27; --text:#e8ebf2; --muted:#9aa3b5; --accent:#6c9bff; --border:#252c3b; --chip:#1d2740; }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);z-index:10}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+  nav .brand{font-weight:700}
+  nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-size:.95rem}
+  header.hero{padding:72px 0 48px}
+  .hero h1{font-size:clamp(2rem,5vw,3rem);margin:0 0 8px;line-height:1.15}
+  .hero p.lead{font-size:1.15rem;color:var(--muted);max-width:640px;margin:0 0 24px}
+  .btn{display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid var(--accent);font-weight:600}
+  .btn.primary{background:var(--accent);color:#fff}
+  .btn.primary:hover{text-decoration:none;opacity:.9}
+  section{padding:40px 0}
+  h2{font-size:1.5rem;margin:0 0 20px}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px}
+  .card h3{margin:0 0 6px;font-size:1.1rem}
+  .card .course{font-size:.85rem;color:var(--muted);margin-bottom:10px}
+  .card p{margin:0 0 12px;font-size:.95rem}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{background:var(--chip);color:var(--accent);padding:3px 10px;border-radius:999px;font-size:.78rem;font-weight:600}
+  .featured{grid-column:1/-1;border-color:var(--accent)}
+  .skills{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+  .skill{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
+  .skill strong{display:block;margin-bottom:4px}
+  .skill span{color:var(--muted);font-size:.92rem}
+  ul.plain{margin:0;padding-left:20px;color:var(--muted)}
+  footer{border-top:1px solid var(--border);padding:28px 0;color:var(--muted);font-size:.9rem;text-align:center}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <span class="brand">Thoriq Fahriza</span>
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Halo, saya Thoriq Fahriza.</h1>
+    <p class="lead">Mahasiswa Universitas AMIKOM yang fokus pada Data Science &amp; Machine Learning, dengan minat pada jaringan nirkabel dan mikrokontroler.</p>
+    <a class="btn primary" href="#proyek">Lihat Proyek</a>
+    <a class="btn" href="https://github.com/thoriqfahriza" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</header>
+
+<section id="tentang">
+  <div class="wrap">
+    <h2>Tentang Saya</h2>
+    <p>Saya Thoriq Fahriza Zulham Noor, mahasiswa Universitas AMIKOM. Situs ini mendokumentasikan tugas, praktikum, dan proyek yang saya kerjakan selama kuliah, mulai dari pemodelan machine learning sampai eksperimen perangkat keras dan jaringan. Saya sedang mempersiapkan skripsi di bidang data science / machine learning.</p>
+  </div>
+</section>
+
+<section id="proyek">
+  <div class="wrap">
+    <h2>Proyek &amp; Tugas</h2>
+    <div class="grid">
+
+      <article class="card featured">
+        <h3>Prediksi Rating Film &amp; Sistem Rekomendasi (TMDB)</h3>
+        <div class="course">Penambangan Data &amp; Machine Learning (PDM)</div>
+        <p>Proyek end-to-end pada dataset TMDB: preprocessing, EDA, pemodelan, evaluasi, hyperparameter tuning dengan GridSearchCV, hingga interpretasi fitur. Model yang dibandingkan meliputi Logistic Regression, Random Forest, Gradient Boosting, XGBoost, dan Ensemble Voting Regressor. Eksperimen dilacak dengan MLflow, model disimpan dengan joblib, dan hasilnya disajikan lewat aplikasi web Streamlit bergaya Netflix.</p>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">XGBoost</span><span class="chip">scikit-learn</span><span class="chip">MLflow</span><span class="chip">Streamlit</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Praktikum Mikrokontroler</h3>
+        <div class="course">Mikrokontroler</div>
+        <p>LAB 01 mengenalkan komponen Arduino Mega dan datasheet ATmega. LAB 06 (Aktuator) mengendalikan servo dan motor stepper dengan potensiometer pada Arduino UNO.</p>
+        <div class="chips"><span class="chip">Arduino</span><span class="chip">Servo</span><span class="chip">Stepper</span></div>
+      </article>
+
+      <article class="card">
+        <h3>Teknologi Jaringan Nirkabel</h3>
+        <div class="course">ST141 — Tugas Rumah 1–4</div>
+        <p>Scan dan analisis Wi-Fi sekitar, klasifikasi WPAN/WLAN/WMAN-WWAN, bedah perangkat (router, access point, extender), serta studi kasus jaringan kos dan pengamatan SSID/BSSID.</p>
+        <div class="chips"><span class="chip">WLAN</span><span class="chip">Wi-Fi</span><span class="chip">BSSID</span></div>
+      </article>
+
+      <article class="card">
+        <h3>Basis Data MySQL</h3>
+        <div class="course">Basis Data</div>
+        <p>Latihan query pada skema classicmodels: pengambilan data, subquery, berbagai jenis JOIN, dan transaksi.</p>
+        <div class="chips"><span class="chip">MySQL</span><span class="chip">SQL</span></div>
+      </article>
+
+      <article class="card">
+        <h3>Business Model Canvas — Rental Mobil</h3>
+        <div class="course">Kewirausahaan</div>
+        <p>Perancangan model bisnis rental mobil pribadi, mencakup rencana area bisnis dan Business Model Canvas 9 blok.</p>
+        <div class="chips"><span class="chip">BMC</span><span class="chip">Bisnis</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="keahlian">
+  <div class="wrap">
+    <h2>Keahlian</h2>
+    <div class="skills">
+      <div class="skill"><strong>Data Science &amp; ML</strong><span>Python, Jupyter, Random Forest, Gradient Boosting, XGBoost, GridSearchCV</span></div>
+      <div class="skill"><strong>MLOps &amp; Deployment</strong><span>MLflow, joblib, Streamlit</span></div>
+      <div class="skill"><strong>Database</strong><span>MySQL, SQL (JOIN, subquery, transaction)</span></div>
+      <div class="skill"><strong>Mikrokontroler</strong><span>Arduino UNO / Mega, servo, stepper</span></div>
+      <div class="skill"><strong>Jaringan Nirkabel</strong><span>WLAN, standar Wi-Fi, SSID/BSSID, kanal 2,4 &amp; 5 GHz</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="kontak">
+  <div class="wrap">
+    <h2>Kontak</h2>
+    <ul class="plain">
+      <li>GitHub: <a href="https://github.com/thoriqfahriza" target="_blank" rel="noopener">github.com/thoriqfahriza</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">&copy; 2026 Thoriq Fahriza</div>
+</footer>
+
+</body>
+</html>
